@@ -189,7 +189,8 @@ To reset the database: drop `telegram_reminder_db` in phpMyAdmin and visit the l
 - CSRF tokens on forms and API POST requests
 - Login throttling after repeated failures
 - Cron requires `CRON_SECRET_KEY` when called via HTTP
-- Bot token stored in `storage/settings.json` — do not commit production secrets
+- Bot token stored in `storage/settings.json` — gitignored; never commit production secrets
+- `config/config.php` is gitignored — copy from `config/config.example.php`
 - Set `APP_DEBUG` to `false` on production
 
 ## More docs
