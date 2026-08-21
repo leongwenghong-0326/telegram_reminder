@@ -1,0 +1,39 @@
+# Local secrets / environment
+config/config.php
+.env
+.env.*
+!.env.example
+
+# Runtime storage (tokens, logs, locks)
+storage/settings.json
+storage/*.log
+storage/*.lock
+storage/tmp/
+!storage/.htaccess
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# Logs / caches / temp
+*.log
+*.tmp
+*.cache
+/tmp/
+/cache/
+
+# Local tooling / preview (not part of the app)
+_preview/
+node_modules/
+vendor/
+
+# Composer / npm lock optional local noise
+composer.phar
+npm-debug.log*
+yarn-error.log*
